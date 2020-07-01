@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
    <children>
-      <TextField fx:id="textform" layoutX="14.0" layoutY="38.0" prefHeight="26.0" prefWidth="552.0" />
-      <TextArea fx:id="text" layoutX="14.0" layoutY="75.0" prefHeight="111.0" prefWidth="552.0" />
+      <TextField fx:id="textform" layoutX="14.0" layoutY="38.0" prefHeight="26.0" prefWidth="552.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font></TextField>
+      <TextArea fx:id="text" editable="false" layoutX="14.0" layoutY="75.0" prefHeight="111.0" prefWidth="552.0" wrapText="true">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font></TextArea>
+      <Label fx:id="charsPM" layoutX="14.0" prefHeight="39.0" prefWidth="58.0" text="0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="charsPMAverage" layoutX="171.0" prefHeight="39.0" prefWidth="58.0" text="0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="charsPM1" layoutX="72.0" prefHeight="39.0" prefWidth="58.0" text="CPM">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="charsPM11" layoutX="229.0" prefHeight="39.0" prefWidth="104.0" text="Average">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
